@@ -6,6 +6,7 @@
         Private Zr(3, 3) As Double
         Private gamma(51) As Double
 
+
         Public Sub New()
 
             '' do nothing

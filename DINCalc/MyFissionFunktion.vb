@@ -19,6 +19,7 @@
         Private sigmafiss(4) As Double
 
 
+
         Public Sub New()
 
 

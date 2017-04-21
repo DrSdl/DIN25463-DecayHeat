@@ -8,6 +8,7 @@
         Private gammaII(51) As Double
 
 
+
         Public Sub New()
 
             '' do nothing

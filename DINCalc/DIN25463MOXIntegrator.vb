@@ -4,6 +4,7 @@ Namespace DIN25463MOX
 
     Public Class DIN25463MOXIntegrator
 
+
         Public Function DoIt(ByVal intervalle As Integer, ByRef zeiten() As Double, ByRef leistung() As Double, ByRef matvec() As Double) As Double
 
             Dim heat As Double

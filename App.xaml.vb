@@ -1,7 +1,8 @@
 ﻿ Partial Public Class App
     Inherits Application
 
-    public Sub New()
+
+    Public Sub New()
         InitializeComponent()
     End Sub
     

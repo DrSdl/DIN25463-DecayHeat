@@ -17,7 +17,8 @@ Public Class MyActinideDecayFunktion
     Private epsilon As Double
 
 
-    Public Sub New()
+
+        Public Sub New()
 
         Dim i As Integer
 

@@ -6,6 +6,7 @@
         Private zeiten(1000) As Double
         Private funk(1000) As Double
 
+
         Public Sub New()
             Dim i As Integer
 

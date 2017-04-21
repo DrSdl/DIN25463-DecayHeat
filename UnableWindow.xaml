@@ -4,6 +4,7 @@
   xmlns:c1="clr-namespace:C1.Silverlight;assembly=C1.Silverlight" 
   Width="270" Height="90">
 
+   
     <Grid x:Name="ProgressRoot" Background="White">
         <TextBlock Text="                   " />
         <TextBlock x:Name="UnableStatus" Text="  Sorry, not yet implemented..." />

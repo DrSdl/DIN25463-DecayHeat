@@ -7,6 +7,7 @@
         Private epsilon As Double
         Private powhist As PowerHistory
 
+
         Public Sub New()
 
             epsilon = 0.00000000000016022

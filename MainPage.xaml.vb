@@ -17,6 +17,7 @@ Imports DIN25463silverlight.DIN25463URAN1982
 ' The WebApp is running at www.din25463.de
 
 
+
 Partial Public Class MainPage
     Inherits UserControl
 
@@ -564,6 +565,7 @@ Partial Public Class MainPage
     End Sub
 End Class
 
+
 Public Class DINinput
 
     Dim myName As String
@@ -625,6 +627,7 @@ Public Class DINinput
     End Property
 
 End Class
+
 
 Public Class Reactorinput
 

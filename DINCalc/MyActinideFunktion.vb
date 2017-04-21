@@ -18,6 +18,7 @@
         Private epsilon As Double
 
 
+
         Public Sub New()
 
             Dim i As Integer

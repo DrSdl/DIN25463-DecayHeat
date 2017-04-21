@@ -7,6 +7,7 @@
         Dim Ru(6, 6) As Double
 
 
+
         Public Sub New()
 
             '' do nothing

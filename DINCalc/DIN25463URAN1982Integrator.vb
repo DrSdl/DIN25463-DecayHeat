@@ -4,6 +4,7 @@ Namespace DIN25463URAN1982
 
     Public Class DIN25463URAN1982Integrator
 
+
         Dim Pik(3, 100) As Double
         Dim Tss(65) As Double
         Dim Ats(65) As Double

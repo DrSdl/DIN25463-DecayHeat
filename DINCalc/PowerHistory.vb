@@ -15,6 +15,7 @@
         Private puquality As Double
         Private modratio As Double
 
+
         Private Const u234atommass As Double = 234.0409456
         Private Const u235atommass As Double = 235.0439231
         Private Const u236atommass As Double = 236.0455619
