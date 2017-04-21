@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DINinputs>
+  <DINinput Name="HMM heavy metal mass"    Unit="kg"      Value="535"/>
+  <DINinput Name="U-vector U235"           Unit="%-Utot"  Value="3,20"/>
+</DINinputs>

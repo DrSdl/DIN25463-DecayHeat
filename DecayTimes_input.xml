@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Timeinputs>
+  <Timeinput Shutdown="0" Unit="sec"  />
+  <Timeinput Shutdown="10" Unit="sec" />
+</Timeinputs>

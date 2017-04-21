@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DINinputs>
+  <DINinput Name="HMM heavy metal mass"    Unit="kg"      Value="535"/>
+  <DINinput Name="Pufiss content"          Unit="%-HMM"   Value="4,42"/>
+  <DINinput Name="Am241"                   Unit="%-Putot" Value="1,0"/>
+  <DINinput Name="U-vector U234"           Unit="%-Utot"  Value="0,0014"/>
+  <DINinput Name="U-vector U235"           Unit="%-Utot"  Value="0,25"/>
+  <DINinput Name="U-vector U238"           Unit="%-Utot"  Value="99,7486"/>
+  <DINinput Name="Pu-vector Pu238"         Unit="%-Putot" Value="2,6"/>
+  <DINinput Name="Pu-vector Pu239"         Unit="%-Putot" Value="50,5"/>
+  <DINinput Name="Pu-vector Pu240"         Unit="%-Putot" Value="27,8"/>
+  <DINinput Name="Pu-vector Pu241"         Unit="%-Putot" Value="11,5"/>
+  <DINinput Name="Pu-vector Pu242"         Unit="%-Putot" Value="7,6"/>
+  <DINinput Name="Pu-quality"              Unit="%-(Pu239+Pu241)" Value="62"/>
+  <DINinput Name="moderator-to-fuel ratio" Unit="-"       Value="2"/>
+</DINinputs>

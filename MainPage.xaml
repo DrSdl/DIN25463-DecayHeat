@@ -1,0 +1,158 @@
+﻿    <UserControl x:Class="DIN25463silverlight.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:c1="clr-namespace:C1.Silverlight;assembly=C1.Silverlight" 
+    xmlns:c1x="clr-namespace:C1.Silverlight.Extended;assembly=C1.Silverlight.Extended"
+    xmlns:c1grid="clr-namespace:C1.Silverlight.DataGrid;assembly=C1.Silverlight.DataGrid"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d" d:DesignWidth="640" d:DesignHeight="480">
+
+    <UserControl.Resources>
+
+        <!-- style used to display the border around each control -->
+        <Style x:Key="ControlBorder" TargetType="Border">
+            <Setter Property="BorderThickness" Value="3" />
+            <Setter Property="Background" Value="#FFB0C4DE" />
+            <Setter Property="BorderBrush" Value="#FF3399FF" />
+            <Setter Property="CornerRadius" Value="6" />
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="Padding" Value="5" />
+        </Style>
+
+        <!-- style used to display control titles -->
+        <Style x:Key="ControlTitle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="FontFamily" Value="Courier New" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Foreground" Value="#FF000000" />
+        </Style>
+
+    </UserControl.Resources>
+
+
+    <Grid x:Name="LayoutRoot" Background="White">
+
+            <!-- ScrollViewer with one entry for each control type -->
+       
+            <StackPanel x:Name="mainPanel" Margin="6" Orientation="Horizontal">
+
+            <StackPanel x:Name="contactME" Margin="1" Orientation="Vertical">
+                <Image Height="50" Width="20"></Image>
+                
+                    <HyperlinkButton x:Name="CTbutton"  MouseEnter="HyperlinkButton_MouseEnter_1" MouseLeave="HyperlinkButton_MouseLeave_1"  NavigateUri="mailto:kernkraft@live.co.uk?subject=DIN25463!" VerticalAlignment="Bottom" >
+                    <HyperlinkButton.Content>
+                        <Image Source="./Resources/DIN contact black02a.png"  VerticalAlignment="Bottom"></Image>
+                    </HyperlinkButton.Content>
+                </HyperlinkButton>
+
+                <Image x:Name="copy" Source="./Resources/DIN copyright black.png" VerticalAlignment="Bottom"></Image>
+                
+            </StackPanel>
+
+            <Border Style="{StaticResource ControlBorder}" >
+
+                <Grid x:Name="MyActions" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="23"/>
+                        <RowDefinition Height="5"/>
+                        <RowDefinition Height="23"/>
+                        <RowDefinition Height="5"/>
+                        <RowDefinition Height="23"/>
+                        <RowDefinition Height="23"/>
+                        <RowDefinition Height="23"/>
+                        <RowDefinition Height="23"/>
+                        <RowDefinition Height="23"/>
+                        <RowDefinition Height="23"/>
+                        <RowDefinition Height="283"/>
+                        <RowDefinition Height="10"/>
+                        <RowDefinition Height="13"/>
+                    </Grid.RowDefinitions>
+
+                        <TextBlock Grid.Row="0"  Text="Decay Heat" Style="{StaticResource ControlTitle}" />
+
+                    <c1:C1ComboBox x:Name="WhichHeat" Grid.Row="2" Width="150" SelectedIndex="0" FontSize="11" IsEditable="False"   SelectedIndexChanged="WhichHeat_SelectedIndexChanged"> 
+                        <c1:C1ComboBoxItem  Content="DIN25463-MOX 2008" Tag="DIN25463-MOX 2008" TabIndex="0" />
+                     <!--  <c1:C1ComboBoxItem Content="DIN25463-Uran 2010" Tag="DIN25563-Uran 2010" TabIndex="1"/>
+                        <c1:C1ComboBoxItem Content="ANS-5.1 2005" Tag="ANS-5.1 2005" TabIndex="2"/>
+                        -->
+                        <c1:C1ComboBoxItem Content="DIN25463-Uran 1982" Tag="DIN25463-Uran 1982" TabIndex="3"/>
+   
+                        </c1:C1ComboBox>
+
+                    <Button x:Name="DoIt" Width="150" Content="Start Calculus" Grid.Row="4" Click="DoIt_Click" >
+                    </Button>
+<!--
+                    <TextBlock Grid.Row="11"  Text="email:" FontSize="8" />
+                    <TextBlock Grid.Row="12"  Text="kernkraft@live.co.uk" FontSize="8" />
+-->
+
+
+                </Grid>
+            
+            </Border>
+
+            <Border Style="{StaticResource ControlBorder}" >
+
+                <c1:C1TabControl TabItemShape="Rounded" Padding="3" BorderThickness="1" Background="#FF14425E" BorderBrush="#FFADADAD" Width="400">
+                <c1:C1TabControl.ItemContainerStyle>
+                    <Style TargetType="c1:C1TabItem">
+                        <Setter Property="Padding" Value="5" />
+                    </Style>
+                </c1:C1TabControl.ItemContainerStyle>
+                
+                <c1:C1TabItem x:Name="MyBounds"  Header="Boundary Conditions" TabShape="Rounded">
+
+                        <ScrollViewer>
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock Text="Fuel Data" Style="{StaticResource ControlTitle}" />
+                            
+                                <c1grid:C1DataGrid x:Name="MyDINInput" CanUserAddRows="False">
+  
+                                </c1grid:C1DataGrid>
+
+                                <TextBlock Text="Reactor Data" Style="{StaticResource ControlTitle}" />
+
+                                <c1grid:C1DataGrid x:Name="MyReactorInput">
+
+                                </c1grid:C1DataGrid>
+
+                                <TextBlock Text="Decay Time" Style="{StaticResource ControlTitle}" />
+                                
+                                <c1grid:C1DataGrid x:Name="MyTimesInput">
+
+                                </c1grid:C1DataGrid>
+
+                            </StackPanel>
+
+                        </ScrollViewer>
+
+
+                    </c1:C1TabItem>
+
+                <c1:C1TabItem x:Name="MyResuls" Header="Calculus Results" TabShape="Rounded">
+
+                        <ScrollViewer>
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock Text="Decay Heat Results" Style="{StaticResource ControlTitle}" />
+
+                                <c1grid:C1DataGrid x:Name="MyDINOutput" CanUserAddRows="False" AutoGenerateColumns="True" AutoGeneratingColumn="MyDINOutput_AutoGeneratingColumn">
+
+                                </c1grid:C1DataGrid>
+
+                            </StackPanel>
+
+                        </ScrollViewer>
+
+                    </c1:C1TabItem>
+
+            </c1:C1TabControl>
+            </Border>
+
+        </StackPanel>
+    
+
+    </Grid>
+
+
+</UserControl>

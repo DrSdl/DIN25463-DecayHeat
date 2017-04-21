@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Reactorinputs>
+  <Reactorinput Interval="335"  UnitT="days" Power="19,95" UnitP="MW"/>
+  <Reactorinput Interval="30"   UnitT="days" Power="0,0"   UnitP="MW"/>
+  <Reactorinput Interval="335"   UnitT="days" Power="19,95"   UnitP="MW"/>
+  <Reactorinput Interval="30"   UnitT="days" Power="0,0"   UnitP="MW"/>
+  <Reactorinput Interval="335"   UnitT="days" Power="19,95"   UnitP="MW"/>
+  <Reactorinput Interval="30"   UnitT="days" Power="0,0"   UnitP="MW"/>
+  <Reactorinput Interval="335"   UnitT="days" Power="19,95"   UnitP="MW"/>
+</Reactorinputs>

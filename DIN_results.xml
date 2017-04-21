@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DINOutputs>
+  <DINOutput Interval="0"  UnitT="sec" Power="0,0" UnitP="MW"/>
+  <DINOutput Interval="10"   UnitT="sec" Power="0,0"   UnitP="MW"/>
+</DINOutputs>

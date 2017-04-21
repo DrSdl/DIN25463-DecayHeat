@@ -1,0 +1,17 @@
+﻿<c1:C1Window x:Class="DIN25463silverlight.ProgressWindow"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+  xmlns:c1="clr-namespace:C1.Silverlight;assembly=C1.Silverlight" 
+  Width="270" Height="90">
+
+    <Grid x:Name="ProgressRoot" Background="White">
+        <TextBlock Text="                   " />
+        <TextBlock x:Name="ProgressStatus" Text="    Calculating ..." />
+        <TextBlock Text="                   " />
+        <ProgressBar x:Name="CalcProgress" Foreground="Green" IsIndeterminate="False"  Background="Gray" Value="0" Maximum="100" Width="200" Height="10" Margin="20"  >
+        </ProgressBar>
+    </Grid>
+
+</c1:C1Window>
+
+
